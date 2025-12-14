@@ -8,4 +8,6 @@ Files for Wireshark intro lecture
 [Install instructions](https://github.com/rohess/ws-training/blob/main/ws-install.md "Installation Guide") for Ubuntu, Windows and MacOS
 
 ## test website to capture https traffic
-https://rohess.github.io/wiresharkdemo/
+https://rohess.github.io/wiresharkdemo/  plain http3 traffic
+
+https://ws-demo-8h9.pages.dev     QUIC enabled site
