@@ -40,4 +40,15 @@ some 3rd party build script (read the comments on this page)
 
 https://gist.github.com/syneart/2d30c075c140624b1e150c8ea318a978
 
+run from ./wireshark/build/run/wireshark
 
+Make your self-built Wireshark capture w/o sudo:
+```
+sudo groupadd wireshark
+sudo usermod -aG wireshark $USER
+newgrp wireshark
+sudo chgrp wireshark wireshark/build/run/dumpcap
+sudo chmod 750 wireshark/build/run/dumpcap
+sudo setcap cap_net_raw,cap_net_admin+eip wireshark/build/run/dumpcap
+getcap wireshark/build/run/dumpcap
+```
