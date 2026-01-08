@@ -40,5 +40,12 @@ Log out and in again, afterwards you can verify with
 ```
 launchctl getenv WIRESHARK_CONFIG_DIR
 ```
+## Maxmind GeoIP
+
+the Howto is here: https://wiki.wireshark.org/HowToUseGeoIP
+
+
+The configfile maxmind_db_paths in your WIRESHARK_CONFIG_DIR needs to have a line break at the end, otherwise last line is ignored.<br>
+It should be good if you edit it via "Preferences/Name Resolution/MaxMind database directories"
 
 
